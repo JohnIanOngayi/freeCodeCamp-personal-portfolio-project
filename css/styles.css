@@ -1,0 +1,111 @@
+:root {
+  --portfolio-red: #be3144;
+  --portfolio-grey: radial-gradient(circle at 100% 0%, #181719, #393c3f);
+  --portfolio-blue: #45567d;
+  --portfolio-white: #f0f0f0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-size: 2.85rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid red;
+  background-color: var(--portfolio-red);
+  padding: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+  font-family: Poppins, sans-serif;
+  font-size: 1.4rem;
+}
+
+#profile {
+  height: calc(100vh - 69px);
+  background: var(--portfolio-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#profile #welcome-section h1 {
+  color: white;
+}
+
+#profile #welcome-section h3 {
+  color: var(--portfolio-red);
+  font-family: Raleway, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+#projects {
+  background-color: var(--portfolio-blue);
+}
+
+#projects #projects-header {
+  text-align: center;
+  color: var(--portfolio-white);
+  text-decoration: underline;
+  text-underline-position: under;
+  padding-top: 90px;
+  padding-bottom: 60px;
+  font-weight: 600;
+}
+
+#projects #project-links {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid green;
+}
+
+#projects #project-links a {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 30%;
+}
+
+#projects #project-links a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#projects #project-links a p {
+  width: 100%;
+  color: var(--portfolio-white);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+  background-color: #393c3f;
+}

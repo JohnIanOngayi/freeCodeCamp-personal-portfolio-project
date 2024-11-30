@@ -109,3 +109,40 @@ nav a {
   padding: 10px;
   background-color: #393c3f;
 }
+
+#contacts {
+  height: calc(100vh - 69px - 83px - 43px);
+  background-color: #393c3f;
+  color: var(--portfolio-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#contacts a {
+  color: var(--portfolio-white);
+}
+
+#footer {
+  width: 100%;
+  background-color: #393c3f;
+  color: var(--portfolio-white);
+  display: flex;
+  justify-content: space-around;
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  padding: 40px;
+  border-top: 6px solid var(--portfolio-red);
+}
+
+@media (max-width: 560px) {
+  #projects,
+  #projects #project-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
